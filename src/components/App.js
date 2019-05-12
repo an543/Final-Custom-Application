@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   getData() {
-    axios.get('http://my-json-server.typicode.com/bnissen24/project2DB/posts')
+    axios.get('http://my-json-server.typicode.com/bnissen24/project2DB/accounts')
       .then(response => {
         this.props.setTasks(response.data);
       }).catch(error => {
